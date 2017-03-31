@@ -58,29 +58,25 @@ basic_model.fit(zone_beat, event_clearance_group, epochs=1, verbose=1)
 
 Explanation:
 
-```
-basic_model.add(Dense(100, input_shape=(90,), activation='relu', name="dense_1")) 
+`basic_model.add(Dense(100, input_shape=(90,), activation='relu', name="dense_1"))`
 
 - input_shape here refers to the number of columns in the X data or the input data and these numbers need to link up, the first parameter can be whatever you want.
-```
 
-```
-basic_model.add(Dense(44, input_shape=(100,), activation="sigmoid", name="dense_4")) 
+
+`basic_model.add(Dense(44, input_shape=(100,), activation="sigmoid", name="dense_4"))`
 
 - Here the first parameter matters, it has to match up with the number of columns of the Y data or the output data.  The input_shape here only has to correspond to the output (first parameter) of the previous Dense so any internal or hidden layers can be whatever you want.
-```
 
-```
-basic_model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy']) 
+
+`basic_model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])`
 
 - the loss is categorical_cross_entropy to indicate that this is a multi output classification problem.  The optimizer could be adam or sgd or whatever.  metrics refers to what is being optimized for.  In this case accuracy.
-```
 
-```
-basic_model.fit(zone_beat, event_clearance_group, epochs=1, verbose=1) 
+
+`basic_model.fit(zone_beat, event_clearance_group, epochs=1, verbose=1)`
 
 - zone_beat is the X data (or input data), event_clearance_group is the Y data or the output data.
-```
+
 
 We can double check our results with the more_complete.py which is also in this folder :D  Happy coding!
 
