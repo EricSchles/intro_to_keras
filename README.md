@@ -1,4 +1,4 @@
-#Understanding Keras
+# Understanding Keras
 
 The Keras library is pretty amazing.  It does a pretty good job of wrapping an admittedly hard type of model - a neural network, and makes it pretty easy.  That being said, there documentation, as with most technical documentations, don't explain everything you need to know.
 
